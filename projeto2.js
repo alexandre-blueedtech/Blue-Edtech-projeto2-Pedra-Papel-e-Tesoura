@@ -13,11 +13,14 @@ while (jogador != 0 && jogador != 1 && jogador != 2) {
 }
 //OPÇÃO VADIDADA E SELECIONADA
 let selecionadoUsuario = opcoes[jogador];
-console.log(selecionadoUsuario);
 
 //OPÇÃO DO COMPUTADOR(NPC)
 let computador = opcoes[Math.trunc(Math.random() * 3)];
-console.log(computador);
+
+let escolhaJogadorePc = console.log(
+  `o Jogador escolheu ${selecionadoUsuario}, e o NPC escolheu ${computador}`
+);
+
 //RESULTADOS POSSÍVEIS, CASO A ESCOLHA DO JOGADOR SEJA PEDRA
 if (selecionadoUsuario == 0 && computador == 1) {
   console.log("Papel ganha de Pedra, O NPC Ganhou!");
