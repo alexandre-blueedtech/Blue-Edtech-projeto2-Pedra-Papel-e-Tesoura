@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+const chalk = require("chalk");
 //LISTA DE OPÇÕES
 let opcoes = ["pedra", "papel", "tesoura"];
 let vitorias = 0;
